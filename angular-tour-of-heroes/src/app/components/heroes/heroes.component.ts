@@ -13,4 +13,9 @@ import { HEROES } from '../../mock-heroes';
 })
 export class HeroesComponent {
   heroes = HEROES;
+
+  selectedHero?: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
