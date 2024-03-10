@@ -3,6 +3,7 @@ import { CommonModule, NgFor } from '@angular/common';
 import { Hero } from '../../hero';
 import { HEROES } from '../../mock-heroes';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
+import { HeroService } from '../../hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -12,7 +13,8 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
   styleUrl: './heroes.component.css',
 })
 export class HeroesComponent {
-  heroes = HEROES;
+  heroes: Hero[] = [];
+  constructor(private heroService: HeroService) {}
 
   selectedHero?: Hero;
   onSelect(hero: Hero): void {
