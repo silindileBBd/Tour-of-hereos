@@ -10,11 +10,9 @@ export class MessageService {
     if (this.message.length > 0) {
       this.message = '';
     }
-
     this.message += message;
-  }
-
-  clear() {
-    this.message = '';
+    setTimeout(() => {
+      this.message = '';
+    }, 3000);
   }
 }
