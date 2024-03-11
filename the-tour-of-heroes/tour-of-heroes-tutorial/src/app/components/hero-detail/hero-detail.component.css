@@ -1,3 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #cfd8dc;
+  margin-top: 20px;
+}
+
 label {
   color: #435960;
   font-weight: bold;
@@ -5,20 +17,23 @@ label {
 input {
   font-size: 1em;
   padding: 0.5rem;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 button {
   margin-top: 20px;
   margin-right: 0.5rem;
-  background-color: #eee;
+  background-color: #ccc;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
+  border-radius: 15px;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #435960;
 }
 button:disabled {
-  background-color: #eee;
+  background-color: #435960;
   color: #ccc;
   cursor: auto;
 }
