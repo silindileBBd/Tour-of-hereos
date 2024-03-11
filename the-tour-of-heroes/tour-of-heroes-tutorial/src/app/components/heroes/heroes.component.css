@@ -1,20 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
   width: 15em;
 }
-.add-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-}
 
 input {
   display: block;
   width: 100%;
-  height: 55px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 13rem;
   box-sizing: border-box;
   border: 2px solid black;
   border-radius: 15px 0 0 15px;
@@ -69,12 +78,13 @@ input {
 }
 
 .add-button {
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  height: 55px;
-  width: 130px;
-  border: 2px solid black;
-  border-radius: 0 15px 15px 0;
   margin-left: 5px;
+  width: auto;
+  height: 35px;
+  width: 5rem;
+  border-radius: 0 15px 15px 0;
 }
 
 .add-button:hover {
@@ -96,4 +106,13 @@ button.delete {
 button.delete:hover {
   background-color: #525252;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .add-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
