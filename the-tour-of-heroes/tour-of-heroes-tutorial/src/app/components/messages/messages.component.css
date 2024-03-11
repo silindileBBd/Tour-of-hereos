@@ -1,0 +1,10 @@
+.messages {
+  background-color: rgb(206, 213, 211);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}

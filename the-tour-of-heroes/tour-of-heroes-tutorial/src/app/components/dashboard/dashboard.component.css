@@ -1,11 +1,16 @@
 h2 {
   text-align: center;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .heroes-menu {
   padding: 0;
   margin: auto;
-  max-width: 1000px;
+  width: 1000px;
 
   /* flexbox */
   display: -webkit-box;
@@ -38,6 +43,7 @@ a {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
+  margin-left: 5px;
 }
 
 @media (min-width: 600px) {

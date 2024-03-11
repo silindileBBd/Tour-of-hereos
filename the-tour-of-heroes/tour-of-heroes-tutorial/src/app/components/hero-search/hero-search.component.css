@@ -8,9 +8,11 @@ label {
 input {
   padding: 0.5rem;
   width: 100%;
-  max-width: 600px;
+  width: 600px;
   box-sizing: border-box;
   display: block;
+  border: 2px solid black;
+  border-radius: 15px;
 }
 
 input:focus {
