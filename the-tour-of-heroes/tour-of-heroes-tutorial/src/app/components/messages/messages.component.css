@@ -1,11 +1,11 @@
 .messages {
   background-color: rgb(206, 213, 211);
   width: auto;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   padding: 10px;
+  margin-top: 20px;
 }
