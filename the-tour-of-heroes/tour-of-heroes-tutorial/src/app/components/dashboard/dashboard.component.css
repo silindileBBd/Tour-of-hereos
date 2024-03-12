@@ -21,6 +21,9 @@ a {
   border-radius: 5px;
   text-decoration: none;
   color: #333;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
   background-color: #3f525c;
 }
 
@@ -28,7 +31,6 @@ a:hover {
   background-color: #f2f2f2;
 }
 
-/* Media query for tablets and smaller devices */
 @media (max-width: 768px) {
   .heroes-menu {
     display: flex;
@@ -36,8 +38,10 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .heroes-menu a {
-    width: 18%;
+
+  a {
+    width: 10rem;
+    height: 2rem;
   }
 }
 
@@ -54,7 +58,9 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .heroes-menu a {
-    width: 18%;
+
+  a {
+    width: 10rem;
+    height: 2rem;
   }
 }
