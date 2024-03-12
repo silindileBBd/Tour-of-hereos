@@ -85,6 +85,7 @@ input {
   height: 35px;
   width: 5rem;
   border-radius: 0 15px 15px 0;
+  font-family: Arial, sans-serif;
 }
 
 .add-button:hover {
